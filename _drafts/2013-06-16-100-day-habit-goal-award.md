@@ -12,3 +12,5 @@ layout: default
 100天结束日期：**20130924**
 
 加油哦！
+
+{% include JB/setup %}
