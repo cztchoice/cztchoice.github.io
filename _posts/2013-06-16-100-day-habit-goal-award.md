@@ -16,4 +16,3 @@ tags:
 
 加油哦！
 
-{% include JB/setup %}

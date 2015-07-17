@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
 
 最近在阅读Linux内核中大量使用的struct指定初始化方式，以前没有见过，所以调研了一下，下面是调研的总结。
 
@@ -26,6 +25,7 @@ tags: []
 **所以推荐大家用指定初始化**
 
 下面是各种初始化方式的例子：
+
 ```c
 test t_designated_initializer = {
     //Designated initializers， not in order
@@ -40,6 +40,7 @@ test t_partial_designated_initializer = {
 test t_c89_initializer = {
 3, 4};
 ```
+
 参考[Initialization of structures and unions]，[Designated initializers for aggregate types (C only)], [C99 new feature: 指定初始化][C99 Designated initializers in Chinese]
 
 不过我们很多情况下是不赋初值的，那么在这种情况下，不同的赋值方式有什么样的结果呢？
@@ -64,6 +65,7 @@ C有一个“存储类型”的概念，这个概念被用来定义变量或者�
 参考：[C Storage Classes], [C语言的5种存储类以及关键字volatile、restrict][C five storage Class]
 
 验证程序如下：
+
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -151,11 +153,10 @@ int main()
 
 	return 0;
 }
-
-
 ```
 
 输出结果为：
+
 ```
 t_c89_initializer.a: 3
 t_c89_initializer.b: 4
@@ -187,6 +188,7 @@ t_default_local_static.b: 0
 t_default_local_non_static.a: 2686916
 t_default_local_non_static.b: 1963560149
 ```
+
 可以看到最后的local_non_static被初始化成了一个无意义的值。其他的都可以正常的初始化成功。
 
 [Initialization of structures and unions]:https://publib.boulder.ibm.com/infocenter/comphelp/v8v101/index.jsp?topic=%2Fcom.ibm.xlcpp8a.doc%2Flanguage%2Fref%2Fstrin.htm

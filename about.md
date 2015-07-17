@@ -1,9 +1,11 @@
 ---
 layout: page
 title: About
-header: About Myself
-group: navigation
+permalink: /about/
 ---
-{% include JB/setup %}
 
- My name is Chen Zhitao, a graduate student in Advanced Computer System Architecture research group, University of Science and Technology of China.
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+
+You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+
+You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
