@@ -26,7 +26,7 @@ tags: []
 
 下面是各种初始化方式的例子：
 
-```c
+~~~c
 test t_designated_initializer = {
     //Designated initializers， not in order
     .b = 3,
@@ -39,7 +39,7 @@ test t_partial_designated_initializer = {
 
 test t_c89_initializer = {
 3, 4};
-```
+~~~
 
 参考[Initialization of structures and unions]，[Designated initializers for aggregate types (C only)], [C99 new feature: 指定初始化][C99 Designated initializers in Chinese]
 
@@ -66,7 +66,7 @@ C有一个“存储类型”的概念，这个概念被用来定义变量或者�
 
 验证程序如下：
 
-```c
+~~~C
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -153,11 +153,11 @@ int main()
 
 	return 0;
 }
-```
+~~~
 
 输出结果为：
 
-```
+~~~
 t_c89_initializer.a: 3
 t_c89_initializer.b: 4
 
@@ -187,7 +187,7 @@ t_default_local_static.b: 0
 
 t_default_local_non_static.a: 2686916
 t_default_local_non_static.b: 1963560149
-```
+~~~
 
 可以看到最后的local_non_static被初始化成了一个无意义的值。其他的都可以正常的初始化成功。
 

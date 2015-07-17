@@ -12,6 +12,6 @@ twitter_username: cztchoice
 github_username:  cztchoice
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 
 markdown_ext: "md, markdown,mkd"
