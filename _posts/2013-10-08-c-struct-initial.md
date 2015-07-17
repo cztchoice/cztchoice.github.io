@@ -26,7 +26,7 @@ tags: []
 
 下面是各种初始化方式的例子：
 
-~~~c
+~~~ C
 test t_designated_initializer = {
     //Designated initializers， not in order
     .b = 3,
@@ -66,7 +66,7 @@ C有一个“存储类型”的概念，这个概念被用来定义变量或者�
 
 验证程序如下：
 
-~~~C
+~~~ C
 #include<stdio.h>
 #include<stdlib.h>
 
