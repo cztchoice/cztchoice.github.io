@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This Zhitao Chen's blog page.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I'm interesting in Lua and go now(haven't learn), and have a little experence in C and Linux. Hope to learn more about them.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+My login name is @cztchoice almost 99% search result about cztchoice is me. So you can use it to find me everywhere.
+
+You can find the link to my github and twitter below. 
