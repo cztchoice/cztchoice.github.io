@@ -9,14 +9,17 @@ tags: []
 最近在阅读Linux内核中大量使用的struct指定初始化方式，以前没有见过，所以调研了一下，下面是调研的总结。
 
 首先说下C struct初始化的方式：
+
 有两种：
+
 1. C89风格初始化方式
 2. 指定初始化(designated initializers), C99添加，只可以在C语言中使用，不可以在C++中使用
 
 >指定初始化(designated initializers)的优势：
-* Elements within an aggregate can be initialized in any order.
-* The initializer list can omit elements that are declared anywhere in the aggregate, rather than only at the end. Elements that are omitted are initialized as if they are static objects: arithmetic types are initialized to 0; pointers are initialized to NULL.
-* Where inconsistent or incomplete bracketing of initializers for multi-dimensional arrays or nested aggregates may be difficult to understand, designators can more clearly identify the element or member to be initialized.
+
+> * Elements within an aggregate can be initialized in any order.
+> * The initializer list can omit elements that are declared anywhere in the aggregate, rather than only at the end. Elements that are omitted are initialized as if they are static objects: arithmetic types are initialized to 0; pointers are initialized to NULL.
+> * Where inconsistent or incomplete bracketing of initializers for multi-dimensional arrays or nested aggregates may be difficult to understand, designators can more clearly identify the element or member to be initialized.
 
 * 集合体（结构，联合，数组）中的元素可以以任何顺序初始化
 * 初始化程序可以忽略在集合体的任何位置上声明的元素，而不是象在C89的初始化方式中只能忽略最后的几个元素。 **被忽略的元素会以静态对象的方式进行初始化：数值类型被初始化为0， 指针被初始化为NULL** 
@@ -55,8 +58,11 @@ test t_c89_initializer = {
 参考：[Initialization of structures and unions]
 
 那么什么是存储类型(storage class)呢？
+
 C has a concept of 'Storage classes' which are used to define the scope (visability) and life time of variables and/or functions
+
 C有一个“存储类型”的概念，这个概念被用来定义变量或者函数的作用域（可见性）和生命周期。
+
 1. auto is the default storage class for local variables
 2. register is used to define local variables that should be stored in a register instead of RAM
 3. static is the default storage class for global variables

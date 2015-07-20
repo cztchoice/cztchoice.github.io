@@ -12,6 +12,7 @@ tags:
 奖励：Kindle Paperwhite![Kindle Paperwhite](http://g-ec4.images-amazon.com/images/G/28/kindle/dp/2012/KC/feature-design._V384892167_.jpg)，如果当时的时候iPad已经便宜了，或者有其他好的再说。
 
 开始时间：20130529
+
 100天结束日期：**20130924**
 
 加油哦！
