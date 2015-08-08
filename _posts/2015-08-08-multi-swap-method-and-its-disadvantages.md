@@ -9,6 +9,38 @@ tags: []
 # 各种不同的swap方法和他们的优缺点
 # Multi-swap method and its Pros and Cons
 
+Origin:
+Today I write a quicksort program. I'm very confident, and think I can write once and get it through.
+But reality is different, I debug it for 1 and a half hour. And find the question is on the swap function I used.
+
+First, I use a swap funciton like this:
+
+```c
+void swap(int &a, int &b) {
+  a = a^b;
+  b = a^b;
+  a = a^b;
+}
+```
+
+And get many output of 0, which I didn't even have one in the input array.
+Then I try this one:
+
+```c
+void swap(int &a, int &b) {
+  int temp = a;
+  b = temp;
+  a = b;
+}
+```
+
+Yeah, I make a mistake that, the third sentence should be the second sentence.
+
+But, the two mistakes is not easy to find, especially when I'm not very confident with my quicksort code.
+and confident with my swap code. What a crazy thing.
+
+So, I decide to collect some swap method, and compare below.
+
 Method 1: 
 
 * Pros: Easy to read and write
