@@ -1,11 +1,4 @@
 ---
----
-layout: post
-title: "My First Post"
-description: ""
-category: 
-tags: [test]
----
 layout: post
 title: "My First Post"
 description: ""
