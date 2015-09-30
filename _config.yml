@@ -11,6 +11,8 @@ url: "http://www.zhitao.me" # the base hostname & protocol for your site
 twitter_username: cztchoice
 github_username:  cztchoice
 
+permalink: /:year/:month/:title.html
+
 # Build settings
 #markdown: kramdown
 markdown: redcarpet
