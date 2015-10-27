@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mac调教输入法总结"
+title: "Mac调教输入法总结"
 description: ""
 category: 
 tags: []
