@@ -14,8 +14,4 @@ github_username:  cztchoice
 
 permalink: /:year/:month/:title.html
 
-# Build settings
-#markdown: kramdown
-# markdown: redcarpet
-
 markdown_ext: "md,markdown,mkd"
