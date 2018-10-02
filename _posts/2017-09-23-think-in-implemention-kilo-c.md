@@ -1,3 +1,11 @@
+---
+layout: post
+title: "实现kilo.c中的思考"
+description: "实现kilo.c中的思考"
+category: 
+tags: []
+---
+
 # 实现kilo.c中的思考
 
 有些数据就是规定好的，这个就叫API
