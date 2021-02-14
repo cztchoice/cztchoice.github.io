@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include gitalk.html %}
+
+    {% include footer.html %}
+
+  </body>
+
+  {% include google_analytics.html %}
+</html>
