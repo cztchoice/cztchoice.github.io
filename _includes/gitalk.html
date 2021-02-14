@@ -1,7 +1,6 @@
-<!-- {% if page.comments %} -->
 <div id="gitalk-container"></div>
 <script>
-
+// 不能在本文件的最初一行和最后一行都使用注释
 var gitalk = new Gitalk({
   clientID: 'bf3078dd759131261d63',
   clientSecret: '6dd3cd3740171d50db4f4e5c39226b573069baae',
@@ -15,5 +14,3 @@ var gitalk = new Gitalk({
 gitalk.render('gitalk-container')
 </script>
 <noscript>Please enable JavaScript to view the gitalk comments powered by Gitalk.</a></noscript>
-
-<!-- {% endif %} -->
