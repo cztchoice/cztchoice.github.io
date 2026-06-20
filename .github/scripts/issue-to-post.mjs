@@ -15,9 +15,18 @@ if (!issue) {
 }
 
 const labels = (issue.labels || []).map((label) => label.name);
+const allowedAuthors = (process.env.BLOG_ALLOWED_AUTHORS || "")
+  .split(",")
+  .map((author) => author.trim())
+  .filter(Boolean);
 
 if (!labels.includes("blog")) {
   console.log(`Issue #${issue.number} does not have the blog label. Skipping.`);
+  process.exit(0);
+}
+
+if (allowedAuthors.length > 0 && !allowedAuthors.includes(issue.user?.login)) {
+  console.log(`Issue #${issue.number} was opened by ${issue.user?.login || "unknown"}, not an allowed blog author. Skipping.`);
   process.exit(0);
 }
 
