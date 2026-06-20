@@ -1,0 +1,33 @@
+name: Blog post
+description: Write a post and let GitHub Actions publish it to Jekyll.
+title: "[Blog] "
+labels: ["blog"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Optional. Used as the post description.
+    validations:
+      required: false
+  - type: input
+    id: slug
+    attributes:
+      label: Slug
+      description: Optional but recommended for Chinese titles. Example: my-new-post
+    validations:
+      required: false
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Optional. Use comma-separated tags, for example: jekyll, github
+    validations:
+      required: false
+  - type: textarea
+    id: post-body
+    attributes:
+      label: Post body
+      description: Write the post in Markdown.
+    validations:
+      required: true
