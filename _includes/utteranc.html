@@ -1,17 +1,13 @@
 <div id="utteranc-container"></div>
-<script src="https://giscus.app/client.js"
-        data-repo="cztchoice/cztchoice.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnk1NDQ4NTM5"
-        data-category="General"
-        data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyODc3Mzg1"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
+<script src="https://utteranc.es/client.js"
+        repo="cztchoice/cztchoice.github.io"
+        {% if page.github_issue_number %}
+        issue-number="{{ page.github_issue_number }}"
+        {% else %}
+        issue-term="pathname"
+        {% endif %}
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>
-<noscript>Please enable JavaScript to view the comments powered by giscus.</noscript>
+<noscript>Please enable JavaScript to view the comments powered by utterances.</noscript>
